@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Pertanyaan dan Jawaban</title>
+  <style>
+    .answer {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="">
+    <div class="row">
+      <div class="col bg-danger text-white">
+        Beranda -> Bantuan
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Pertanyaan dan Jawaban</h1>
+    <div class="accordion" id="accordionExample">
+
+      <!-- Pertanyaan 1 -->
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Apa itu HTML?
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            HTML (Hypertext Markup Language) adalah bahasa markup standar untuk membuat halaman web. Halaman web yang ditulis dalam HTML terdiri dari elemen-elemen yang dikelilingi oleh tag-tag. Tag-tag ini memberi tahu browser bagaimana cara menampilkan konten tersebut.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pertanyaan 2 -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Apa itu CSS?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengendalikan tampilan atau layout dari dokumen yang ditulis dalam HTML. Dengan CSS, Anda dapat mengubah warna teks, mengatur tata letak halaman, dan memberikan efek visual lainnya.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pertanyaan 3 -->
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Apa itu JavaScript?
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat halaman web interaktif. Dengan JavaScript, Anda dapat menambahkan fungsi, mengubah konten secara dinamis, dan berinteraksi dengan pengguna.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

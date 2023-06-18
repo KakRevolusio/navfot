@@ -1,0 +1,56 @@
+.fixed-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.fixed-bottom-right.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.round-button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.round-button img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.round-button:hover {
+    border-radius: 5px;
+    width: 100px;
+}
+
+.round-button:hover span {
+    display: inline-block;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.round-button span {
+    display: none;
+    opacity: 0;
+    font-size: 14px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
